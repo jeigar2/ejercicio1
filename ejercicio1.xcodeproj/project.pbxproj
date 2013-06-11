@@ -24,6 +24,8 @@
 		66ED851B17668F1300BF50A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ED84F317668F1200BF50A1 /* Foundation.framework */; };
 		66ED852317668F1300BF50A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66ED852117668F1300BF50A1 /* InfoPlist.strings */; };
 		66ED852617668F1300BF50A1 /* ejercicio1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ED852517668F1300BF50A1 /* ejercicio1Tests.m */; };
+		66ED85301766919600BF50A1 /* portada.png in Resources */ = {isa = PBXBuildFile; fileRef = 66ED852F1766919600BF50A1 /* portada.png */; };
+		66ED8532176691A100BF50A1 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 66ED8531176691A100BF50A1 /* logo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		66ED852217668F1300BF50A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66ED852417668F1300BF50A1 /* ejercicio1Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ejercicio1Tests.h; sourceTree = "<group>"; };
 		66ED852517668F1300BF50A1 /* ejercicio1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ejercicio1Tests.m; sourceTree = "<group>"; };
+		66ED852F1766919600BF50A1 /* portada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portada.png; sourceTree = "<group>"; };
+		66ED8531176691A100BF50A1 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 		66ED84F717668F1200BF50A1 /* ejercicio1 */ = {
 			isa = PBXGroup;
 			children = (
+				66ED852F1766919600BF50A1 /* portada.png */,
+				66ED8531176691A100BF50A1 /* logo.gif */,
 				66ED850017668F1200BF50A1 /* ESAppDelegate.h */,
 				66ED850117668F1200BF50A1 /* ESAppDelegate.m */,
 				66ED850917668F1200BF50A1 /* MainStoryboard_iPhone.storyboard */,
@@ -241,6 +247,8 @@
 				66ED850817668F1200BF50A1 /* Default-568h@2x.png in Resources */,
 				66ED850B17668F1200BF50A1 /* MainStoryboard_iPhone.storyboard in Resources */,
 				66ED850E17668F1300BF50A1 /* MainStoryboard_iPad.storyboard in Resources */,
+				66ED85301766919600BF50A1 /* portada.png in Resources */,
+				66ED8532176691A100BF50A1 /* logo.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +408,7 @@
 				GCC_PREFIX_HEADER = "ejercicio1/ejercicio1-Prefix.pch";
 				INFOPLIST_FILE = "ejercicio1/ejercicio1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -411,6 +420,7 @@
 				GCC_PREFIX_HEADER = "ejercicio1/ejercicio1-Prefix.pch";
 				INFOPLIST_FILE = "ejercicio1/ejercicio1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

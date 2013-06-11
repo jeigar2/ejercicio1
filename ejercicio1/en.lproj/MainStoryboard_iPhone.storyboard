@@ -1,26 +1,94 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ESViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Curso de programación  iOS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHT-vZ-Lnk">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nw-Ht-y4k">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Actualiza hora">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actualizarFecha:" destination="2" eventType="touchUpInside" id="LHF-8J-jgL"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="portada.png" translatesAutoresizingMaskIntoConstraints="NO" id="lxS-KB-bqL">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="229" id="slj-Ls-M52"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="I66-4k-pGf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="IFh-kM-6sK"/>
+                                    <constraint firstAttribute="height" constant="24" id="gjD-Cy-5EG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="10/06/2013" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFu-hF-Ox1">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="I66-4k-pGf" secondAttribute="trailing" constant="5" id="9d1-Pc-qqG"/>
+                            <constraint firstAttribute="bottom" secondItem="7Nw-Ht-y4k" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="ILw-Zh-mwE"/>
+                            <constraint firstItem="NFu-hF-Ox1" firstAttribute="centerX" secondItem="7Nw-Ht-y4k" secondAttribute="centerX" type="default" id="PVS-Mn-vo2"/>
+                            <constraint firstItem="lxS-KB-bqL" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="RTa-56-FVb"/>
+                            <constraint firstItem="lxS-KB-bqL" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="TMH-QF-SSa"/>
+                            <constraint firstItem="NFu-hF-Ox1" firstAttribute="centerX" secondItem="lHT-vZ-Lnk" secondAttribute="centerX" type="default" id="TSR-2j-gPH"/>
+                            <constraint firstItem="lxS-KB-bqL" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="bzx-FF-Id2"/>
+                            <constraint firstItem="I66-4k-pGf" firstAttribute="bottom" secondItem="lxS-KB-bqL" secondAttribute="bottom" type="default" id="nLZ-dZ-ykb"/>
+                            <constraint firstAttribute="bottom" secondItem="NFu-hF-Ox1" secondAttribute="bottom" constant="100" id="oO9-Hb-k7M"/>
+                            <constraint firstAttribute="bottom" secondItem="lHT-vZ-Lnk" secondAttribute="bottom" constant="134" id="qbm-l0-RHb"/>
+                            <constraint firstItem="7Nw-Ht-y4k" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="103" id="yyd-cJ-N8c"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fechaLabel" destination="NFu-hF-Ox1" id="qx6-RF-2NJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo.gif" width="140" height="26"/>
+        <image name="portada.png" width="763" height="574"/>
+    </resources>
+    <classes>
+        <class className="ESViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ESViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="actualizarFecha:"/>
+                <relationship kind="outlet" name="fechaLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

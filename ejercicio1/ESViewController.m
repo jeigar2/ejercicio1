@@ -13,6 +13,7 @@
 @end
 
 @implementation ESViewController
+@synthesize fechaLabel;
 
 - (void)viewDidLoad
 {
@@ -26,4 +27,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)actualizarFecha:(id)sender {
+    NSDateFormatter *fecha = [[NSDateFormatter alloc] init];
+    [fecha setDateFormat:@"dd/MM/yyyy hh:mm:ss"];
+    
+    self.fechaLabel.text = [fecha stringFromDate:[NSDate date]];
+}
 @end

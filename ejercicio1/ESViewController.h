@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ESViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *fechaLabel;
+- (IBAction)actualizarFecha:(id)sender;
 
 @end
