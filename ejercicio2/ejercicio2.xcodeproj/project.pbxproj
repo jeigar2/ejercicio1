@@ -29,6 +29,7 @@
 		CE7F69DA1767986500DADA08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F69A71767986400DADA08 /* Foundation.framework */; };
 		CE7F69E21767986500DADA08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE7F69E01767986500DADA08 /* InfoPlist.strings */; };
 		CE7F69E51767986500DADA08 /* ejercicio2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F69E41767986500DADA08 /* ejercicio2Tests.m */; };
+		CE7F69F017679C9600DADA08 /* ESNoticiasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F69EF17679C9600DADA08 /* ESNoticiasViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		CE7F69E11767986500DADA08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE7F69E31767986500DADA08 /* ejercicio2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ejercicio2Tests.h; sourceTree = "<group>"; };
 		CE7F69E41767986500DADA08 /* ejercicio2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ejercicio2Tests.m; sourceTree = "<group>"; };
+		CE7F69EE17679C9600DADA08 /* ESNoticiasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESNoticiasViewController.h; sourceTree = "<group>"; };
+		CE7F69EF17679C9600DADA08 /* ESNoticiasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESNoticiasViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				CE7F69B41767986400DADA08 /* ESAppDelegate.h */,
 				CE7F69B51767986400DADA08 /* ESAppDelegate.m */,
 				CE7F69BD1767986400DADA08 /* MainStoryboard_iPhone.storyboard */,
+				CE7F69EE17679C9600DADA08 /* ESNoticiasViewController.h */,
+				CE7F69EF17679C9600DADA08 /* ESNoticiasViewController.m */,
 				CE7F69C01767986400DADA08 /* MainStoryboard_iPad.storyboard */,
 				CE7F69C31767986400DADA08 /* ESFirstViewController.h */,
 				CE7F69C41767986400DADA08 /* ESFirstViewController.m */,
@@ -300,6 +305,7 @@
 				CE7F69B61767986400DADA08 /* ESAppDelegate.m in Sources */,
 				CE7F69C51767986400DADA08 /* ESFirstViewController.m in Sources */,
 				CE7F69CC1767986400DADA08 /* ESSecondViewController.m in Sources */,
+				CE7F69F017679C9600DADA08 /* ESNoticiasViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
