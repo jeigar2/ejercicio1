@@ -46,24 +46,36 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="7ku-eU-Cla">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="xXB-BF-eHf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="I66-4k-pGf" secondAttribute="trailing" constant="5" id="9d1-Pc-qqG"/>
+                            <constraint firstItem="7ku-eU-Cla" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="I6f-rd-vS5"/>
                             <constraint firstAttribute="bottom" secondItem="7Nw-Ht-y4k" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="ILw-Zh-mwE"/>
+                            <constraint firstAttribute="bottom" secondItem="7ku-eU-Cla" secondAttribute="bottom" constant="170" id="Kcj-f5-JzJ"/>
                             <constraint firstItem="NFu-hF-Ox1" firstAttribute="centerX" secondItem="7Nw-Ht-y4k" secondAttribute="centerX" type="default" id="PVS-Mn-vo2"/>
                             <constraint firstItem="lxS-KB-bqL" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="RTa-56-FVb"/>
                             <constraint firstItem="lxS-KB-bqL" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="TMH-QF-SSa"/>
                             <constraint firstItem="NFu-hF-Ox1" firstAttribute="centerX" secondItem="lHT-vZ-Lnk" secondAttribute="centerX" type="default" id="TSR-2j-gPH"/>
                             <constraint firstItem="lxS-KB-bqL" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="bzx-FF-Id2"/>
+                            <constraint firstAttribute="trailing" secondItem="7ku-eU-Cla" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="eQC-DV-jwI"/>
                             <constraint firstItem="I66-4k-pGf" firstAttribute="bottom" secondItem="lxS-KB-bqL" secondAttribute="bottom" type="default" id="nLZ-dZ-ykb"/>
                             <constraint firstAttribute="bottom" secondItem="NFu-hF-Ox1" secondAttribute="bottom" constant="100" id="oO9-Hb-k7M"/>
+                            <constraint firstItem="lHT-vZ-Lnk" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="59" id="pg2-Wj-WH4"/>
                             <constraint firstAttribute="bottom" secondItem="lHT-vZ-Lnk" secondAttribute="bottom" constant="134" id="qbm-l0-RHb"/>
-                            <constraint firstItem="7Nw-Ht-y4k" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="103" id="yyd-cJ-N8c"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="fechaLabel" destination="NFu-hF-Ox1" id="qx6-RF-2NJ"/>
+                        <outlet property="saludoLabel" destination="7ku-eU-Cla" id="q5z-Qq-opN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -74,18 +86,6 @@
         <image name="logo.gif" width="140" height="26"/>
         <image name="portada.png" width="763" height="574"/>
     </resources>
-    <classes>
-        <class className="ESViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ESViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="actualizarFecha:"/>
-                <relationship kind="outlet" name="fechaLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

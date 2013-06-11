@@ -12,4 +12,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *fechaLabel;
 - (IBAction)actualizarFecha:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UILabel *saludoLabel;
+- (void) saludo:(NSString *) texto;
+- (void) saludo:(NSString *) texto deParteDe:(NSString *) nombre;
+
+- (void) saludo:(NSString *) texto deParteDe:(NSString *) nombre esPorLaTarde:(Boolean *) esTarde;
 @end
