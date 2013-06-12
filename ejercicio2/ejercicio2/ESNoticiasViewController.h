@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ESNoticiasViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UISegmentedControl *noticiasSegmentedControl;
+@property (strong, nonatomic) IBOutlet UIWebView *noticiasWebView;
 
 @end
